@@ -134,7 +134,7 @@ module Miro
     end
 
     def remote_source_image?
-      @src_image_path =~ /^https?:\/\//
+      @src_image_path.path =~ /^https?:\/\//
     end
   end
 end
