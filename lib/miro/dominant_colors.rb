@@ -134,6 +134,7 @@ module Miro
     end
 
     def remote_source_image?
+(require 'byebug'; debugger)
       @src_image_path.path =~ /^https?:\/\//
     end
   end
